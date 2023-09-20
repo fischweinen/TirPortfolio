@@ -5,54 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Litho Cry</title>
     <!--Link to favicon-->
-    <link
-      rel="shortcut icon"
-      href="media\images\Fish.png"
-      type="image/x-icon"
-    />
+    <link rel="Fish Icon" href="media\images\Fish.png" type="image/x-icon" />
   </head>
 
+  <header id="headerContainer">
+    <h1>Litho Cry's Portfolio</h1>
+
+    <hr />
+
+    <div id="navContainer">
+      <nav>
+        <a href="#" class="newOption">Home</a>
+        <a href="./html/resume.html" class="newOption">Resume</a>
+        <a href="./html/funFacts.html" class="newOption">Fun Facts</a>
+      </nav>
+    </div>
+  </header>
+
+  <hr />
+
+  <img
+    src="media/images/avatar.png"
+    alt="Cartoon Avatar"
+    height="100"
+    width="100"
+  />
+  <blockquote>"I do not exist" -Me</blockquote>
+
   <body>
-    <header id="page_header">
-      <span><strong>Litho Cry's Portfolio </strong></span>
+    <div id="introductionContainer">
+      <p>
+        Hello, I am Litho. I am an Information Technology major. I am currently
+        in my Junior year at Oakland University. I am a part of Oakland Robotics
+        Association. For more information check out my
+        <a href="./html/resume.html" class="newOption">Resume</a> or some
+        <a href="./html/funFacts.html" class="newOption">Fun Facts</a> !
+      </p>
+    </div>
 
-      <div id="navContainer">
-        <nav id="navBar">
-          <a href="#" class="newOption">Home</a>
-          <a href="./html/resume.html" class="newOption">Resume</a>
-          <a href="./html/funFacts.html" class="newOption">Fun Facts</a>
-        </nav>
-      </div>
-
-      <div id="imageContainer">
-        <img
-          src="media\images\avatar.png"
-          alt="Cartoon avatar"
-          heigth="100"
-          width="100"
-        />
-      </div>
-
-      <div id="quoteContainer">
-        <p>
-          3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679
-        </p>
-      </div>
-
-      <div id="textContainer">
-        <p>
-          I am talkiing abut myself, this is my elevator pitch. I am intresting
-          and worth caring about. This is very detailed and important, as am I.
-          My current professional affiliation is being alive and being good at
-          it. My prior professional and future professional interest is to
-          continue being cool and alive yup. To know more about me check out my
-          Page2 and Page3.
-        </p>
-      </div>
-
-      <div id="progressBarContainer">
-        <img src="" alt="" />
-      </div>
-    </header>
+    <div id="progressBarContainer">
+      <label for="progressBar">Progress to Degree: </label>
+      <span
+        ><progress id="progressBar" value="78" max="100"></progress>
+        <label>78 % Done</label>
+      </span>
+    </div>
   </body>
+
+  <hr />
+
+  <footer>
+    <cite>©Litho Cry. IT Student, Oakland University, 2023.</cite>
+    <p>Oakland Robotics Association is located at:</p>
+    <address>115 Library Dr Rm 182, Rochester, MI 48309</address>
+    <a href="https://instagram.com/ou_robotics"
+      >Follow Oakland Robotics on Instragram
+    </a>
+    <a href="mailto:oaklandrobotics@gmail.com">Email Oakland Robotics</a>
+  </footer>
 </html>
