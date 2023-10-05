@@ -139,31 +139,47 @@ input[type="checkbox"] {
 }
 
 /* Styling for index.html !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-.layoutBody {
+.lBody {
+  background-image: url(../media/images/6.png);
+  background-size: 100vw 100vh;
+}
+
+.lLayout {
   width: 100vw;
   height: 100vh;
 
   display: grid;
   grid:
-    "sidebar body" 1fr
-    / 50% 1fr;
+    "filler1 filler2" 1fr
+    "text image" 1fr
+    "filler3 filler4" 1fr
+    / 50% 50%;
 }
 
-.sidebarBody {
-  grid-area: sidebar;
-  background-color: #decaa9;
+.filler1 {
+  grid-area: filler1;
 }
-
-.bodyBody {
-  grid-area: body;
-  background-color: #6d4930;
-  display: felx;
+.filler2 {
+  grid-area: filler2;
+}
+.text {
+  grid-area: text;
+  font-size: 75px;
+}
+.image {
+  grid-area: image;
+}
+.filler3 {
+  grid-area: filler3;
+}
+.filler4 {
+  grid-area: filler4;
 }
 
 /* Styling for home.html !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .hBody {
   background-image: url(../media/images/layered-waves-haikei.png);
-  background-size: 100vw;
+  background-size: 100vw 100vh;
 }
 
 .hPageTitle {
@@ -172,10 +188,15 @@ input[type="checkbox"] {
 /* Styling for resume.html !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .rBody {
   background-image: url(../media/images/layered-steps-haikei.png);
-  background-size: 100vw;
+  background-size: 100vw 100vh;
 }
 
 /* Styling for funfacts.html !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.ffBody {
+  background-image: url(../media/images/5.png);
+  background-size: 100vw 100vh;
+}
+
 .ffPageTitle {
   color: #a4b07e;
 }
@@ -192,40 +213,34 @@ input[type="checkbox"] {
 
 .book {
   grid-area: book;
-  background-color: #6d4930;
   display: flex;
   place-items: center;
   justify-content: center;
 }
 .booktxt {
   grid-area: booktxt;
-  background-color: #decaa9;
   font-size: 25px;
   color: #0d2818;
 }
 .song {
   grid-area: song;
-  background-color: #6d4930;
   display: flex;
   place-items: center;
   justify-content: center;
 }
 .songxtx {
   grid-area: songxtx;
-  background-color: #decaa9;
   font-size: 25px;
   color: #0d2818;
 }
 .movie {
   grid-area: movie;
-  background-color: #6d4930;
   display: flex;
   place-items: center;
   justify-content: center;
 }
 .movietxt {
   grid-area: movietxt;
-  background-color: #decaa9;
   font-size: 25px;
   color: #0d2818;
 }
