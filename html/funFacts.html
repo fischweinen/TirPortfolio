@@ -9,71 +9,78 @@
     <link rel="stylesheet" href="../css/navbarStyle.css" />
   </head>
 
-  <header id="headerContainer">
-
-    <div id="navContainer">
-      <nav>
-        <a href="./index.html" class="newOption">Home</a>
-        <a href="./resume.html" class="newOption">Resume</a>
-        <a href="#" class="newOption">Fun Facts</a>
-      </nav>
-    </div>
-
-<h1 class="pageTitle">Some Fun Facts About Me !</h1>
-
-    <hr />
-
-    <body class="funFactsBody">
-    <section class="layoutFacts">
-      <div class="bookImage">
+  <header class="landingHead">
+    <nav class="navBar">
+      <!--Logo Container-->
+      <div class="logo">
         <img
-          src="../media/images/Echo.png"
-          alt="Cover of Book Echo by Pam Muñoz Ryan"
-          height="400"
-          width="300"
+          src="/media/images/fsch-removebg-preview.png"
+          alt="Outline of a Fish"
+          width="250"
         />
       </div>
-      <div class="faveBook">
-        My favourite book is
-        <a href="https://www.amazon.com/Echo-Pam-Munoz-Ryan/dp/0439874025"
-          >Echo
-        </a>
-        by Pam Muñoz Ryan. It follows the story of a harmonica through three
-        different periods in time. I love the perspective changes and the
-        wholesome sweet ending of the storyline.
-      </div>
-      <div class="songSample">
-        <iframe
-          style="border-radius: 12px"
-          src="https://open.spotify.com/embed/track/3eKxATkk7gIlmBrHnK9wQp?utm_source=generator"
-          width="800"
-          height="200"
-          frameborder="0"
-          allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-        >
-        </iframe>
-      </div>
-      <div class="faveSong">
-        <a
-          href="https://open.spotify.com/track/3eKxATkk7gIlmBrHnK9wQp?si=6eb0b59f3de9463a"
-          >Pleasant Encounters of the Fourth Kind
-        </a>
-        by Zoo Strategies has been my latest favourite song.
-      </div>
-       <div class="movieTrailer">
-        <iframe
-          height="540"
-          width="960"
-          src="https://www.youtube.com/embed/CZ1CATNbXg0"
-          title="A trailer of Wall-E"
-        >
-        </iframe>
-      </div>
-      <div class="faveFilm">
-        Wall-E has always been a favourite movie for me.
-      </div>
-    </section>
-  </body>
+
+      <!--Navigation Menu Container-->
+      <ul class="navLinks">
+        <!--Hanburger menu icon-->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+        <!--Write out the navigation menu options-->
+        <div class="navOptions">
+          <li class="home">
+          <a href="/html/index.html">Home</a>
+            <!--dropdown menu-->
+            <ul class="dropdown">
+              <li><a href="/landing.html">LandingPage</a></li>
+            </ul>
+          </li>
+          </li>
+          <!--Rest of the nav bar-->
+          <li><a href="/html/resume.html">Resume</a></li>
+          <li><a href="/html/funFacts.html">Fun Facts</a></li>
+        </div>
+    </nav>
+  </header>
+
+<h1 class="ffPageTitle">Some Fun Facts About Me !</h1>
+
+    <hr />
+<body class="ffBody">
+  <section class="ffLayout">
+    <div class="book"><img
+            src="../media/images/Echo.png"
+            alt="Cover of Book Echo by Pam Muñoz Ryan"
+            height="300"
+            width="200"
+          /></div>
+    <div class="booktxt">My favourite book is
+          <a href="https://www.amazon.com/Echo-Pam-Munoz-Ryan/dp/0439874025"
+            >Echo
+          </a>
+          by Pam Muñoz Ryan. It follows the story of a harmonica through three
+          different periods in time. I love the perspective changes and the
+          wholesome sweet ending of the storyline.</div>
+    <div class="song"><iframe
+            src="https://open.spotify.com/embed/track/3eKxATkk7gIlmBrHnK9wQp?utm_source=generator"
+            width="500"
+            height="275"
+            title="the song, Pleasant Encounters of the Fourth Kind"
+          >
+          </iframe></div>
+    <div class="songxtx"><a
+            href="https://open.spotify.com/track/3eKxATkk7gIlmBrHnK9wQp?si=6eb0b59f3de9463a"
+            >Pleasant Encounters of the Fourth Kind 
+          </a>by Zoo Strategies has been my latest favourite song.
+        </div>
+    <div class="movie"><iframe
+            height="300"
+            width="534"
+            src="https://www.youtube.com/embed/CZ1CATNbXg0"
+            title="A trailer of Wall-E"
+          >
+          </iframe></div>
+    <div class="movietxt">Wall-E has always been a favourite movie for me.</div>
+  </section>
+</body>
 </html>

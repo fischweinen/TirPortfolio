@@ -3,7 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Linda Tir</title>
+    <!--Link to favicon-->
+    <link rel="Fish Icon" href="/media/images/Fish.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/navbarStyle.css" />
   </head>
-  <body></body>
+
+  <header class="landingHead">
+    <nav class="navBar">
+      <!--Logo Container-->
+      <div class="logo">
+        <img
+          src="/media/images/fsch-removebg-preview.png"
+          alt="Outline of a Fish"
+          width="250"
+        />
+      </div>
+
+      <!--Navigation Menu Container-->
+      <ul class="navLinks">
+        <!--Hanburger menu icon-->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+        <!--Write out the navigation menu options-->
+        <div class="navOptions">
+          <li class="home">
+          <a href="/html/index.html">Home</a>
+            <!--dropdown menu-->
+            <ul class="dropdown">
+              <li><a href="/landing.html">LandingPage</a></li>
+            </ul>
+          </li>
+          </li>
+          <!--Rest of the nav bar-->
+          <li><a href="/html/resume.html">Resume</a></li>
+          <li><a href="/html/funFacts.html">Fun Facts</a></li>
+        </div>
+    </nav>
+  </header>
+
+  <body class="lBody">
+    <section class="layoutBody">
+      <div class="sidebarBody">1</div>
+      <div class="bodyBody">2</div>
+    </section>
+  </body>
 </html>

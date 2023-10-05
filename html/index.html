@@ -9,21 +9,39 @@
     <link rel="stylesheet" href="../css/navbarStyle.css" />
   </head>
 
-  <header id="headerContainer">
-    <h1>Linda Tir's Portfolio</h1>
+  <header class="landingHead">
+    <nav class="navBar">
+      <!--Logo Container-->
+      <div class="logo">
+        <img
+          src="/media/images/fsch-removebg-preview.png"
+          alt="Outline of a Fish"
+          width="250"
+        />
+      </div>
 
-    <hr />
+      <!--Navigation Menu Container-->
+      <ul class="navLinks">
+        <!--Hanburger menu icon-->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
 
-    <div id="navContainer">
-      <nav>
-        <a href="#" class="newOption">Home</a>
-        <a href="./resume.html" class="newOption">Resume</a>
-        <a href="./funFacts.html" class="newOption">Fun Facts</a>
-      </nav>
-    </div>
+        <!--Write out the navigation menu options-->
+        <div class="navOptions">
+          <li class="home">
+          <a href="/html/index.html">Home</a>
+            <!--dropdown menu-->
+            <ul class="dropdown">
+              <li><a href="/landing.html">LandingPage</a></li>
+            </ul>
+          </li>
+          </li>
+          <!--Rest of the nav bar-->
+          <li><a href="/html/resume.html">Resume</a></li>
+          <li><a href="/html/funFacts.html">Fun Facts</a></li>
+        </div>
+    </nav>
   </header>
-
-  <hr />
 
   <img
     src="../media/images/avatar.png"
@@ -35,7 +53,7 @@
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit." -Cicero
   </blockquote>
 
-  <body class="indexBody">
+  <body class="iBody">
     <div id="introductionContainer">
       <p>
         Hello, I am Linda. I am an Information Technology major. I am currently
