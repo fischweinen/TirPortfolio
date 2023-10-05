@@ -6,84 +6,74 @@
     <title>Linda Tir</title>
     <!--Link to favicon-->
     <link rel="Fish Icon" href="../media/images/Fish.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/navbarStyle.css" />
   </head>
 
   <header id="headerContainer">
-    <h1>Some Fun Facts About Me !</h1>
-
-    <hr />
 
     <div id="navContainer">
       <nav>
-        <a href="../index.html" class="newOption">Home</a>
+        <a href="./index.html" class="newOption">Home</a>
         <a href="./resume.html" class="newOption">Resume</a>
         <a href="#" class="newOption">Fun Facts</a>
       </nav>
     </div>
 
+<h1 class="pageTitle">Some Fun Facts About Me !</h1>
+
     <hr />
-  </header>
-  <body>
-    <div id="favoriteBookContainer">
-      <img
-        src="../media/images/Echo.png"
-        alt="Cover of Book Echo by Pam Muñoz
-      Ryan"
-        height="100"
-        width="75"
-      />
 
-      <br />
-
-      My favourite book is
-      <a href="https://www.amazon.com/Echo-Pam-Munoz-Ryan/dp/0439874025"
-        >Echo
-      </a>
-      by Pam Muñoz Ryan. It follows the story of a harmonica through three
-      different periods in time. I love the perspective changes and the
-      wholesome sweet ending of the storyline.
-    </div>
-
-    <br />
-
-    <!--
-      code for embed provided by spotify
-      Pleasant encounters of the fourth kind. Spotify. (2016, October 10). https://open.spotify.com/track/3eKxATkk7gIlmBrHnK9wQp 
-    -->
-    <div id="favoriteAudioContainer">
-      <iframe
-        style="border-radius: 12px"
-        src="https://open.spotify.com/embed/track/3eKxATkk7gIlmBrHnK9wQp?utm_source=generator"
-        width="1000"
-        height="100"
-        frameborder="0"
-        allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
-
-      <br />
-
-      <a
-        href="https://open.spotify.com/track/3eKxATkk7gIlmBrHnK9wQp?si=6eb0b59f3de9463a"
-        >Pleasant Encounters of the Fourth Kind
-      </a>
-      by Zoo Strategies has been my latest favourite song.
-    </div>
-
-    <br />
-
-    <div id="favoriteFilmContainer">
-      <iframe
-        height="540"
-        width="960"
-        src="https://www.youtube.com/embed/CZ1CATNbXg0"
-        title="A trailer of Wall-E"
-      ></iframe>
-
-      <br />
-
-      Wall-E has always been a favourite movie for me.
-    </div>
+    <body class="funFactsBody">
+    <section class="layoutFacts">
+      <div class="bookImage">
+        <img
+          src="../media/images/Echo.png"
+          alt="Cover of Book Echo by Pam Muñoz Ryan"
+          height="400"
+          width="300"
+        />
+      </div>
+      <div class="faveBook">
+        My favourite book is
+        <a href="https://www.amazon.com/Echo-Pam-Munoz-Ryan/dp/0439874025"
+          >Echo
+        </a>
+        by Pam Muñoz Ryan. It follows the story of a harmonica through three
+        different periods in time. I love the perspective changes and the
+        wholesome sweet ending of the storyline.
+      </div>
+      <div class="songSample">
+        <iframe
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/track/3eKxATkk7gIlmBrHnK9wQp?utm_source=generator"
+          width="800"
+          height="200"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+      <div class="faveSong">
+        <a
+          href="https://open.spotify.com/track/3eKxATkk7gIlmBrHnK9wQp?si=6eb0b59f3de9463a"
+          >Pleasant Encounters of the Fourth Kind
+        </a>
+        by Zoo Strategies has been my latest favourite song.
+      </div>
+       <div class="movieTrailer">
+        <iframe
+          height="540"
+          width="960"
+          src="https://www.youtube.com/embed/CZ1CATNbXg0"
+          title="A trailer of Wall-E"
+        >
+        </iframe>
+      </div>
+      <div class="faveFilm">
+        Wall-E has always been a favourite movie for me.
+      </div>
+    </section>
   </body>
 </html>

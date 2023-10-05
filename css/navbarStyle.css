@@ -1,0 +1,85 @@
+/*
+#DECAA9 milk tea
+#A4B07E matcha
+#0D2818 forest green
+#6D4930 coffee 
+*/
+
+/* Styling for landing.html */
+
+/* Styling for index.html */
+
+/* Styling for resume.html */
+.indexResume {
+  background-image: url(../media/images/stacked-waves-haikei.svg);
+  background-size: 100%;
+}
+
+/* Styling for funfacts.html */
+.funFactsBody {
+  background-image: url(../media/images/layered-waves-haikei.svg);
+  background-size: 150%;
+}
+
+.pageTitle {
+  color: #a4b07e;
+}
+
+.layoutFacts {
+  width: auto;
+  height: fit-content;
+
+  display: grid;
+  grid:
+    "faveBook bookImage" 1fr
+    "faveSong songSample" 1fr
+    "faveFilm movieTrailer" 1fr
+    / 30% auto;
+  gap: 10px;
+  grid-auto-flow: row dense;
+
+  align-items: center;
+}
+
+.bookImage {
+  grid-area: bookImage;
+  align-items: center;
+}
+.faveBook {
+  grid-area: faveBook;
+  background-color: #decaa9;
+  text-align: center;
+  border: 15px;
+  border-radius: 10px;
+  font-size: 25px;
+  font-family: sans-serif;
+  color: #6d4930;
+}
+.songSample {
+  grid-area: songSample;
+  align-items: center;
+}
+.faveSong {
+  grid-area: faveSong;
+  background-color: #decaa9;
+  text-align: center;
+  border: 15px;
+  border-radius: 10px;
+  font-size: 25px;
+  font-family: sans-serif;
+  color: #6d4930;
+}
+.movieTrailer {
+  grid-area: movieTrailer;
+  align-items: center;
+}
+.faveFilm {
+  grid-area: faveFilm;
+  background-color: #decaa9;
+  text-align: center;
+  border: 15px;
+  border-radius: 10px;
+  font-size: 25px;
+  font-family: sans-serif;
+  color: #6d4930;
+}
