@@ -1,4 +1,5 @@
 /*
+temp 
 #DECAA9 milk tea
 #A4B07E matcha
 #0D2818 forest green
@@ -161,6 +162,10 @@ input[type="checkbox"] {
 .hBody {
   background-image: url(../media/images/layered-waves-haikei.png);
   background-size: 100%;
+}
+
+.hPageTitle {
+  color: #a4b07e;
 }
 /* Styling for resume.html !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .rBody {
