@@ -1,5 +1,4 @@
 /*
-temp 
 #DECAA9 milk tea
 #A4B07E matcha
 #0D2818 forest green
@@ -47,7 +46,7 @@ li {
 }
 
 .navOptions li:hover {
-  background-color: #decaa9;
+  background-color: #8f9a6c;
   border-radius: 5px;
   transition: 0.3s ease;
 }
@@ -106,12 +105,13 @@ input[type="checkbox"] {
     right: 0;
     left: 0;
     text-align: center;
-    padding: 16px 0;
+    padding: 15px 0;
+    top: 150px;
   }
 
   .navOptions li:hover {
     display: inline-block;
-    background-color: #a4b07e;
+    background-color: #8f9a6c;
     transition: 0.3s ease;
   }
 
@@ -128,8 +128,8 @@ input[type="checkbox"] {
   }
 
   .dropdown {
-    left: 50%;
-    top: 30px;
+    left: 30%;
+    top: 2px;
     transform: translateX(35%);
   }
 
@@ -161,7 +161,7 @@ input[type="checkbox"] {
 /* Styling for home.html !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .hBody {
   background-image: url(../media/images/layered-waves-haikei.png);
-  background-size: 100%;
+  background-size: 100vw;
 }
 
 .hPageTitle {
@@ -170,7 +170,7 @@ input[type="checkbox"] {
 /* Styling for resume.html !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .rBody {
   background-image: url(../media/images/layered-steps-haikei.png);
-  background-size: 100%;
+  background-size: 100vw;
 }
 
 /* Styling for funfacts.html !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -178,7 +178,7 @@ input[type="checkbox"] {
   color: #a4b07e;
 }
 .ffLayout {
-  width: 100%;
+  width: 100vw;
 
   display: grid;
   grid:
