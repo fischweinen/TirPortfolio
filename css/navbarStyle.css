@@ -153,9 +153,11 @@ input[type="checkbox"] {
   grid-area: sidebar;
   background-color: #decaa9;
 }
+
 .bodyBody {
   grid-area: body;
   background-color: #6d4930;
+  display: felx;
 }
 
 /* Styling for home.html !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -185,13 +187,15 @@ input[type="checkbox"] {
     "book booktxt" 1fr
     "song songxtx" 1fr
     "movie movietxt" 1fr
-    / 30% 1fr;
+    / 40% 1fr;
 }
 
 .book {
   grid-area: book;
   background-color: #6d4930;
+  display: flex;
   place-items: center;
+  justify-content: center;
 }
 .booktxt {
   grid-area: booktxt;
@@ -202,7 +206,9 @@ input[type="checkbox"] {
 .song {
   grid-area: song;
   background-color: #6d4930;
+  display: flex;
   place-items: center;
+  justify-content: center;
 }
 .songxtx {
   grid-area: songxtx;
@@ -213,7 +219,9 @@ input[type="checkbox"] {
 .movie {
   grid-area: movie;
   background-color: #6d4930;
+  display: flex;
   place-items: center;
+  justify-content: center;
 }
 .movietxt {
   grid-area: movietxt;
