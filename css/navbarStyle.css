@@ -168,6 +168,9 @@ input[type="checkbox"] {
 }
 .image {
   grid-area: image;
+  background-image: url(../media/images/catdown.png);
+  width: 100vw;
+  height: 100vh;
 }
 .filler3 {
   grid-area: filler3;
