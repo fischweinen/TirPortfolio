@@ -141,47 +141,56 @@ input[type="checkbox"] {
 /* Styling for index.html !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .lBody {
   background-image: url(../media/images/6.png);
-  background-size: 100vw 100vh;
+  background-size: 100% 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-align: left;
 }
 
 .lLayout {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 
   display: grid;
   grid:
-    "filler1 filler2" 1fr
-    "text image" 1fr
-    "filler3 filler4" 1fr
-    / 50% 50%;
+    "text image" 95%
+    "filler3 filler4" 10%
+    / 100% 0%;
 }
 
-.filler1 {
-  grid-area: filler1;
-}
-.filler2 {
-  grid-area: filler2;
-}
 .text {
   grid-area: text;
   font-size: 75px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
-.image {
+
+.filler3::after {
+  content: url(../media/images/catdown.png);
   grid-area: image;
-  background-image: url(../media/images/catdown.png);
-  background-repeat: no-repeat;
-  align-items: center;
-}
-.catcry {
-  display: none;
+  font-size: 50px;
+  left: 75%;
+  float: right;
 }
 
-input[type="checkbox"]:checked ~ .catcry {
-  display: block;
+#toggle:checked ~ .filler3::after {
+  content: url(../media/images/catup.png);
+  grid-area: image;
+  left: 75%;
+  float: right;
 }
 
-.filler3 {
-  grid-area: filler3;
+.toggle {
+  background: #a4b07e;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  font-size: 40px;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -100vw;
 }
 
 .filler4 {
@@ -216,16 +225,16 @@ input[type="checkbox"]:checked ~ .catcry {
 }
 
 .ffPageTitle {
-  color: #a4b07e;
+  color: #0f331e;
 }
 .ffLayout {
-  width: 100vw;
+  width: 100%;
 
   display: grid;
   grid:
-    "book booktxt" 30%
-    "song songxtx" 30%
-    "movie movietxt" 39%
+    "book booktxt" 300px
+    "song songxtx" 300px
+    "movie movietxt" 300px
     / 50% 50%;
 }
 
@@ -242,6 +251,8 @@ input[type="checkbox"]:checked ~ .catcry {
   text-align: center;
   justify-content: center;
   width: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .song {
   grid-area: song;
@@ -256,6 +267,8 @@ input[type="checkbox"]:checked ~ .catcry {
   text-align: center;
   justify-content: center;
   width: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .movie {
   grid-area: movie;
@@ -270,4 +283,6 @@ input[type="checkbox"]:checked ~ .catcry {
   text-align: center;
   justify-content: center;
   width: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
