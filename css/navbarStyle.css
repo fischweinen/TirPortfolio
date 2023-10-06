@@ -169,12 +169,21 @@ input[type="checkbox"] {
 .image {
   grid-area: image;
   background-image: url(../media/images/catdown.png);
-  width: 100vw;
-  height: 100vh;
+  background-repeat: no-repeat;
+  align-items: center;
 }
+.catcry {
+  display: none;
+}
+
+input[type="button"]:active ~ .catcry {
+  display: flex;
+}
+
 .filler3 {
   grid-area: filler3;
 }
+
 .filler4 {
   grid-area: filler4;
 }
