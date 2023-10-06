@@ -176,8 +176,8 @@ input[type="checkbox"] {
   display: none;
 }
 
-input[type="button"]:active ~ .catcry {
-  display: flex;
+input[type="checkbox"]:checked ~ .catcry {
+  display: block;
 }
 
 .filler3 {
@@ -192,6 +192,11 @@ input[type="button"]:active ~ .catcry {
 .hBody {
   background-image: url(../media/images/layered-waves-haikei.png);
   background-size: 100vw 100vh;
+  font-size: 20px;
+}
+
+.quote {
+  text-indent: 1%;
 }
 
 .hPageTitle {
@@ -201,12 +206,13 @@ input[type="button"]:active ~ .catcry {
 .rBody {
   background-image: url(../media/images/layered-steps-haikei.png);
   background-size: 100vw 100vh;
+  font-size: larger;
 }
 
 /* Styling for funfacts.html !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .ffBody {
   background-image: url(../media/images/5.png);
-  background-size: 100vw 100vh;
+  background-size: 100% 100%;
 }
 
 .ffPageTitle {
@@ -217,10 +223,10 @@ input[type="button"]:active ~ .catcry {
 
   display: grid;
   grid:
-    "book booktxt" 1fr
-    "song songxtx" 1fr
-    "movie movietxt" 1fr
-    / 40% 1fr;
+    "book booktxt" 30%
+    "song songxtx" 30%
+    "movie movietxt" 39%
+    / 50% 50%;
 }
 
 .book {
@@ -232,7 +238,10 @@ input[type="button"]:active ~ .catcry {
 .booktxt {
   grid-area: booktxt;
   font-size: 25px;
-  color: #0d2818;
+  color: #a4b07e;
+  text-align: center;
+  justify-content: center;
+  width: 50%;
 }
 .song {
   grid-area: song;
@@ -243,7 +252,10 @@ input[type="button"]:active ~ .catcry {
 .songxtx {
   grid-area: songxtx;
   font-size: 25px;
-  color: #0d2818;
+  color: #a4b07e;
+  text-align: center;
+  justify-content: center;
+  width: 50%;
 }
 .movie {
   grid-area: movie;
@@ -254,5 +266,8 @@ input[type="button"]:active ~ .catcry {
 .movietxt {
   grid-area: movietxt;
   font-size: 25px;
-  color: #0d2818;
+  color: #a4b07e;
+  text-align: center;
+  justify-content: center;
+  width: 50%;
 }
