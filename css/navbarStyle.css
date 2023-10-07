@@ -154,8 +154,8 @@ input[type="checkbox"] {
 
   display: grid;
   grid:
-    "text image" 95%
-    "filler3 filler4" 10%
+    "text image" 50%
+    "filler3 filler4" 40%
     / 100% 0%;
 }
 
@@ -251,8 +251,7 @@ input[type="checkbox"] {
   text-align: center;
   justify-content: center;
   width: 50%;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto;
 }
 .song {
   grid-area: song;
@@ -267,8 +266,7 @@ input[type="checkbox"] {
   text-align: center;
   justify-content: center;
   width: 50%;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto;
 }
 .movie {
   grid-area: movie;
@@ -283,6 +281,5 @@ input[type="checkbox"] {
   text-align: center;
   justify-content: center;
   width: 50%;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto;
 }
